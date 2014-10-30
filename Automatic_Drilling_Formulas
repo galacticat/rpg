@@ -1,0 +1,18 @@
+Auto Remark Trigger:
+'Triggers a true value when a random value between 0 and 1 is greater than 0.9
+IF(rand()>0.9,1,0)
+
+Auto Remark:
+'Triggers a rand value between 0 and 1 when the Auto Remark Trigger returns a true value.
+'Effectively reduces the triggering of the first formula by 10%
+IF([Auto Remark Trigger]>0,rand(),0)
+
+Block_Position:
+'Returns a count down from 300 to 0 when Manual Tare is set to ON and Hookload is greater than 60.
+'Resets the cout down when hookload is below 60.
+Integer(Timer([Manual Tare],IF(Hookload<60,1,0),30000,0,2))/100
+
+Hookload:
+'When Block Position is less than 10, returns a value below 60 (-10 accuracy).
+'When Block Position is above 10, returns a value of 300 (-10 accuracy)
+IF([Block Position]<10,60-(rand()*10),300-(rand()*10))
