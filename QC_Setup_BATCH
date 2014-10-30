@@ -8,7 +8,7 @@ set rigwatch_properties="C:\opt\RW9\jboss\4.0.5.GA\server\default\conf\rigwatch.
 REM Sets the location of the mySQL application
 set mysql_dir="c:\Program Files\canrig\Rigwatch\MySQL\bin\mysql"
 REM Sets the entry intended for the host file
-set qc_host=qc-ftp	192.168.2.142
+set qc_host=qc-ftp	<INSERT QC IP ADDRESS>
 REM Sets the Service Name for JBOSS
 set service=JBOSS405
 
@@ -39,9 +39,9 @@ set next=:rw_properties
 	echo Updating riginfo property file...
 	echo [%date% %time%] Editing the riginfo property files to nabors network >> %cd%\log.txt	
 	if exist %riginfo_properties% (del "%riginfo_properties%"
-	echo remoteURL=http://12.96.17.180/RigInventoryServer/riginfo>> %riginfo_properties%
+	echo remoteURL=http://<INSERT QC SERVER IP ADDRESS>/RigInventoryServer/riginfo>> %riginfo_properties%
 	echo dbServerName=localhost>> %riginfo_properties%
-	echo dbPassword=0EE3227016E7DDACD9177530B2354D96>> %riginfo_properties%
+	echo dbPassword=<INSERT ENCRYPTED PASSWORD>>> %riginfo_properties%
 	echo dbUsername=rigdata>> %riginfo_properties%
 	echo dbName=rigdata>> %riginfo_properties%
 	echo dbPort=3306>> %riginfo_properties%
@@ -49,7 +49,7 @@ set next=:rw_properties
 	echo checkFrequency=24>> %riginfo_properties%
 	echo guidFile=/opt/RW9/rig_guid.dat>> %riginfo_properties%
 		
-	echo [%date% %time%] Remote URL set to http://12.96.17.180/RigInventoryServer/riginfo >> %cd%\log.txt
+	echo [%date% %time%] Remote URL set to http://<INSERT QC SERVER IP ADDRESS>/RigInventoryServer/riginfo >> %cd%\log.txt
 	echo [%date% %time%] CheckFrequency set to 24 >> %cd%\log.txt
 	goto %next%
 	)
@@ -64,9 +64,9 @@ set next=:service_start
 	echo Updating rigwatch property file...
 	echo [%date% %time%] Editing the rigwatch property files to nabors network >> %cd%\log.txt	
 	echo QUERY_TIMEOUT=360>> %rigwatch_properties%
-	echo hessian_url=http://12.96.17.180:9080/edfsoftwareupdate/instruction>> "%rigwatch_properties%"
+	echo hessian_url=http://<INSERT QC IP ADDRESS:PORT>/edfsoftwareupdate/instruction>> "%rigwatch_properties%"
 	
-	echo [%date% %time%] Hessian URL set to http://12.96.17.180:9080/edfsoftwareupdate/instruction >> %cd%\log.txt
+	echo [%date% %time%] Hessian URL set to http://<INSERT QC IP ADDRESS:PORT>/edfsoftwareupdate/instruction >> %cd%\log.txt
 	
 	echo Property file updates complete	
 	goto %next%
@@ -93,23 +93,23 @@ set next=:check_Host_File
 	echo Performing mySQL updates...
 REM Removes all slaves from the RigWatch config table
 	echo [%date% %time%] Deleting all slaves from RigWatch config table >> %cd%\log.txt
-	%mysql_dir% -urigdata -prigdata rigwatch -e "delete from rigwatch.rigwatch_config where framework_id like 'Slave%';"
+	%mysql_dir% -u<INSERT USERNAME> -p<INSERT PASSWORD> rigwatch -e "delete from rigwatch.rigwatch_config where framework_id like 'Slave%';"
 
-REM Updates all RIGREPORTDATA entries to use hostname FTP.mywells.com	
+REM Updates all RIGREPORTDATA entries to use hostname <INSERT FTP HOSTNAME>	
 	echo [%date% %time%] Updating Databse to point to QC FTP Server >> %cd%\log.txt
-	%mysql_dir% -urigdata -prigdata rigdata -e "Update rigdata.FTP_login_info set HOSTNAME='FTP.mywells.com' where TYPE='RIGREPORTDATA';"
+	%mysql_dir% -u<INSERT USERNAME> -p<INSERT PASSWORD> rigdata -e "Update rigdata.FTP_login_info set HOSTNAME='<INSERT FTP HOSTNAME> where TYPE='RIGREPORTDATA';"
 
 REM Updates the password used for all FTP.mywells.com hostname entries
 	echo [%date% %time%] Setting HOSTNAME to "FTP.mywells.com" >> %cd%\log.txt	
-	%mysql_dir% -urigdata -prigdata rigdata -e "Update rigdata.FTP_login_info set PASSWORD='B24FE90194466DF939B76F3EF8509CFA' where HOSTNAME='FTP.mywells.com';"
+	%mysql_dir% -u<INSERT USERNAME> -p<INSERT PASSWORD> rigdata -e "Update rigdata.FTP_login_info set PASSWORD='<INSERT ENCRYPTED PASSWORD>' where HOSTNAME='<INSERT FTP HOSTNAME>';"
 
 REM Sets the ECM URL
 	echo [%date% %time%] Updating ECM URL >> %cd%\log.txt	
-	%mysql_dir% -urigdata -prigdata rigdata -e "update transmetainfo.dynamic_config  set PROPERTY_VALUE = 'http://12.96.17.180:9080/ECM/ecmService'      where  PROPERTY_NAME = 'ecm_url';"
+	%mysql_dir% -u<INSERT USERNAME> -p<INSERT PASSWORD> rigdata -e "update transmetainfo.dynamic_config  set PROPERTY_VALUE = 'http://<INSERT QC IP ADDRESS:PORT>/ECM/ecmService'      where  PROPERTY_NAME = 'ecm_url';"
 
 REM Sets the OPC Client Version
 	echo [%date% %time%] Updating OPC Client Version >> %cd%\log.txt	
-	%mysql_dir% -urigdata -prigdata rigdata -e "update transmetainfo.dynamic_config set PROPERTY_VALUE = '3' where PROPERTY_NAME ='opc_client_version';"
+	%mysql_dir% -u<INSERT USERNAME> -p<INSERT PASSWORD> rigdata -e "update transmetainfo.dynamic_config set PROPERTY_VALUE = '3' where PROPERTY_NAME ='opc_client_version';"
 	
 	echo mySQL updates complete
 	echo ------------------------------
