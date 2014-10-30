@@ -1,0 +1,5 @@
+@echo off
+for /f "skip=2 tokens=2 delims==" %%i in ('wmic computersystem get model /value') do (
+echo "%username%",%%i >> \\cdthoufs01\Techwriter\_Techwriter-2007\Resources\Software\PC_Inventory.csv
+)
+END
