@@ -1,9 +1,10 @@
 body {
   /*scrolling kitten*/
-  background-image: url('http://sereedmedia.com/srmwp/wp-content/uploads/kitten.jpg');
+  background-image: url("../images/Beholder_3E.jpg");
   background-repeat: repeat-x;
+  background-position: 500ox 1000px;
   /*scrolling kitten*/
-  background-color: #660000;
+  background-color: #FFFFFF;
   margin: 0;
   padding: 0;
   color: grey;
@@ -15,6 +16,7 @@ body {
 /* General & 'Reset' Stuff */
 
 .container {
+  background-color: white;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
