@@ -7,7 +7,7 @@ body {
   background-color: #FFFFFF;
   margin: 0;
   padding: 0;
-  color: grey;
+  color: black;
   font-size: 16px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -103,7 +103,7 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: grey;
+  color: black;
   text-decoration: underline;
   letter-spacing: -0.03em;
   /*text-shadow: 0 1px 1px #000000,
@@ -206,13 +206,13 @@ hr {
 
 .btn {
   display: inline-block;
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 1), rgba(35, 35, 35, 1) 50%, rgba(10, 10, 10, 1.2) 50%, rgba(0, 0, 0, 1.2));
   padding: 8px 18px;
   border-radius: 50px;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-bottom: 2px solid rgba(0, 0, 0, 0.7);
   border-top: 2px solid rgba(0, 0, 0, 1);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 13px;
