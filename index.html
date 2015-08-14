@@ -39,7 +39,6 @@
 	<dd>Takes you to the <a target="_blank" href="http://www.redneckit.net">Redneck IT</a> website.</dd>
 </dl>	
 <p><h3>Time to next game:</h3></p>
-
 <div id="countbox1"></div>
 <br></br>
 
@@ -50,16 +49,6 @@
   
 
 
-<!--Background scroll function-->
-<script src="../javascripts/jquery-2.1.4.js" type="text/javascript">
-$(document).ready(function(){
-        var x = 0;
-        setInterval(function(){
-            x-=1;
-            $('body').css('background-position', x + 'px 0');
-        }, 10);
-    })
-</script>
 <script type="text/javascript">
 // Author: ricocheting.com
 // Version: v3.0
@@ -155,9 +144,15 @@ window.onload=function(){
 
 	cdown.add(new Date(2015,7,22,13,30,00), "countbox1");
 };
-
-
-
-
+</script>
+<!--Background scroll function-->
+<script src="../javascripts/jquery-2.1.4.js" type="text/javascript">
+$(document).ready(function(){
+        var x = 0;
+        setInterval(function(){
+            x-=1;
+            $('body').css('background-position', x + 'px 0');
+        }, 10);
+    })
 </script>
 </html>
