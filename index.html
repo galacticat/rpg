@@ -52,7 +52,14 @@
 
 <!--Background scroll function-->
 <script src="../javascripts/jquery-2.1.4.js" type="text/javascript">
-
+$(document).ready(function(){
+        var x = 0;
+        setInterval(function(){
+            x-=1;
+            $('body').css('background-position', x + 'px 0');
+        }, 10);
+    })
+	
 // Author: ricocheting.com
 // Version: v3.0
 // Date: 2014-09-05
@@ -150,12 +157,6 @@ window.onload=function(){
 
 
 
-$(document).ready(function(){
-        var x = 0;
-        setInterval(function(){
-            x-=1;
-            $('body').css('background-position', x + 'px 0');
-        }, 10);
-    })
+
 </script>
 </html>
