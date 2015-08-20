@@ -4,7 +4,7 @@
      // Date: 2014-09-05
      // Description: displays the amount of time until the "dateFuture" entered below.
 
-     var CDown = function() {
+    var CDown = function() {
 	this.state=0;// if initialized
 	this.counts=[];// array holding countdown date objects and id to print to {d:new Date(2013,11,18,18,54,36), id:"countbox1"}
 	this.interval=null;// setInterval object
@@ -86,9 +86,4 @@
 	display: function(cnt,msg){
 		document.getElementById(cnt.id).innerHTML=msg;
 	}
-};
-window.onload=function(){
-	var cdown = new CDown();
-
-	cdown.add(new Date(2015,7,22,13,30,00), "countbox1");
 };

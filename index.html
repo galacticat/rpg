@@ -11,8 +11,8 @@
  
  <body>
   <header>
-   <div class="headerbox">
-     <h1>RPG Group</h1>
+   <div>
+     <h1>RPG Group</h2>
      <h2>Hosted by Redneck IT</h2>
    </div>
   </header>
@@ -34,9 +34,7 @@
      <dt>Redneck IT:</dt>
       <dd>Takes you to the <a target="_blank" href="http://www.redneckit.net">Redneck IT</a> website.</dd>
     </dl>
-    
     <br></br>
-    
     <div>
      <h3>Time to next game:</h3>
      <div id="countbox1"></div>
@@ -45,6 +43,8 @@
    </section>
   </div>
  </body>
+ 
+
 <script src="../javascripts/jquery-2.1.4.js" type="text/javascript"></script>
 <script src="../javascripts/countdown.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -55,6 +55,7 @@
              $('body').css('background-position', x + 'px 0');
          }, 10);
      })
+	 
  window.onload=function(){
 	var cdown = new CDown();
 
