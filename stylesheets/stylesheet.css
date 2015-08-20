@@ -1,7 +1,7 @@
 body {
   /*scrolling beholder*/
   background-image: url("../images/Beholder_3E.jpg");
-  background-repeat: repeat-x;
+  background-repeat: repeat-x; repeat-y;
   background-position: 500ox 1000px;
   /*scrolling beholder*/
   background-color: #FFFFFF;
@@ -51,7 +51,7 @@ li {
 
 header {
   background-image: url("../images/DnD.jpg");
-  background-size: 100%;
+  background-size: 950px 100%;
   background-repeat: no-repeat;
   background-position: center;
   padding: 50px 0;
@@ -59,7 +59,7 @@ header {
   border-color: black;
   border-style: solid;
   border-radius: 10px;
-  border-size: 950px 100%;
+  border-width: 950px;
 }
 
 header h1 {
