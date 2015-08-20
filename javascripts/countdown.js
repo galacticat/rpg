@@ -87,3 +87,8 @@
 		document.getElementById(cnt.id).innerHTML=msg;
 	}
 };
+window.onload=function(){
+	var cdown = new CDown();
+
+	cdown.add(new Date(2015,7,22,13,30,00), "countbox1");
+};
