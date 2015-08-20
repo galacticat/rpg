@@ -22,7 +22,7 @@ body {
   max-width: 600px;
 }
 
-.headerbox h1 h2 {
+.headerbox h1, h2 {
  color: white;
  background-color: black;
 }
