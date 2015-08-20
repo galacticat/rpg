@@ -1,9 +1,9 @@
 body {
-  /*scrolling kitten*/
+  /*scrolling beholder*/
   background-image: url("../images/Beholder_3E.jpg");
   background-repeat: repeat-x;
   background-position: 500ox 1000px;
-  /*scrolling kitten*/
+  /*scrolling beholder*/
   background-color: #FFFFFF;
   margin: 0;
   padding: 0;
@@ -12,10 +12,6 @@ body {
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
-
-/* General & 'Reset' Stuff */
-
-
 
 .container {
   background-color: white;
@@ -61,6 +57,9 @@ header {
   width: 100%;
   padding: 50px 0;
   margin: 0 0 10px 0;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
 }
 
 header h1 {
