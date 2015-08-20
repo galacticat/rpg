@@ -2,7 +2,7 @@ body {
   /*scrolling beholder*/
   background-image: url("../images/Beholder_3E.jpg");
   background-repeat: repeat-x; repeat-y;
-  background-position: 500ox 1000px;
+  background-position: 500px 1000px;
   /*scrolling beholder*/
   background-color: #FFFFFF;
   margin: 0;
@@ -13,6 +13,18 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
+.headerbox {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 100%;
+  max-width: 600px;
+  color: white;
+  background-color: black;
+}
+
+
 .container {
   background-color: white;
   margin-top: 20px;
@@ -22,14 +34,7 @@ body {
   max-width: 600px;
 }
 
-.container1 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 600px;
-}
+
 section {
   /*display: block;*/
   margin: 0 0 20px 0;
