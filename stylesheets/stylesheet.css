@@ -54,12 +54,12 @@ header {
   background-size: 950px 100%;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 50px 0;
-  margin: 0 0 10px 0;
+  padding: 5px 0px;
+  margin: 25% 0 10px 0;
   border-color: black;
   border-style: solid;
   border-radius: 10px;
-  border-width: 950px;
+  border-width: 10px;
 }
 
 header h1 {
