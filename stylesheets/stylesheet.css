@@ -60,6 +60,7 @@ header {
   border-color: black;
   border-style: solid;
   border-radius: 10px;
+  border-size: 950px 100%;
 }
 
 header h1 {
