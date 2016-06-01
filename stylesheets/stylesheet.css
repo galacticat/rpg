@@ -15,6 +15,42 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
+.car-right {
+  position: absolute;
+  top: 86%;
+  left: -200px;
+  z-index: 10;
+  background-color: red;
+    
+  animation-duration: 1s;
+  animation-name: goRight;
+  animation-iteration-count: infinite;
+    
+  -moz-animation-duration: 1s;
+  -moz-animation-name: goRight;
+  -moz-animation-iteration-count: infinite;
+}
+
+@keyframes goRight {
+  from {
+    -webkit-transform: translate(0,0);
+  }
+
+  to {
+    -webkit-transform: translate(1920px,0);
+  }
+}
+
+@-moz-keyframes goRight {
+  from {
+    -moz-transform: translate(0,0);
+  }
+
+  to {
+    -moz-transform: translate(1920px,0);
+  }
+}
+
 /* Header, <header>
    header   - container
    h1       - project name
