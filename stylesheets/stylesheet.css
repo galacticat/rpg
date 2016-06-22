@@ -34,6 +34,7 @@ li:hover {
 }
 
 #container{
+	z-index: 1;
 	margin: 0px;
 	position:relative;
 	height: 100%;
@@ -42,13 +43,9 @@ li:hover {
 }
 
 #block{
+	z-index: -1;
 	margin: 0px;
-	position: absolute;
-	top: 0;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	position: relative;
 	background-image: url("../images/Beholder_3E.jpg");
 	background-repeat: repeat;
 	opacity: 0.1;
@@ -71,6 +68,7 @@ li:hover {
 }
 
 body {
+	z-index: 1;
 	margin: 0px;
 }
 
