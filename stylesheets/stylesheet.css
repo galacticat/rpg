@@ -35,22 +35,26 @@ header {
 }
 
 header h1 {
-  margin-left: 5%;
-  margin-right: 25%;
   font-size: 30px;
   font-weight: bold;
   color: white;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   text-shadow: 2px 2px black;
+  padding-right: 10px;
+  padding-left 10px;
+  padding-top 10px;
+  padding-bottom 10px;
 }
 
 header h2 {
-  margin-left: 5%;
-  margin-right: 25%;
   font-size: 18px;
   font-weight: 300;
   color: white;
   text-shadow: 2px 2px black;
+  padding-right: 10px;
+  padding-left 10px;
+  padding-top 10px;
+  padding-bottom 10px;
 }
 
 #container {
