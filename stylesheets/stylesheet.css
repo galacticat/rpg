@@ -1,3 +1,28 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li:hover {
+    background-color: black;
+}
+
 #header {
   margin: 0px;
   background-image: url("../images/DnD.jpg");
@@ -77,29 +102,4 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
   text-decoration: underline;
   letter-spacing: -0.03em;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li:hover {
-    background-color: black;
 }
