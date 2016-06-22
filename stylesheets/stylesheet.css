@@ -7,7 +7,7 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
-body:after {
+ background {
   display: block;
   position: absolute;
   top: 0;
