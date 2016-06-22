@@ -4,8 +4,7 @@
 
 div#first{
 	background-image: url("../images/Beholder_3E.jpg");
-	background-repeat: repeat-y;
-	background-repeat: repeat-x;
+	background-repeat: repeat;
 	opacity: 0.5;
 	width: 300px;
 	height 300px;
