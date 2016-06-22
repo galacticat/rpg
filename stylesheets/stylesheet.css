@@ -14,7 +14,12 @@ body {
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
-
+img {
+  opacity: 0.5;
+  filter:alpha(opacity=50);/*For IE8 and earlier */
+}
+	
+}
 .car-right {
   position: absolute;
   top: 86%;
