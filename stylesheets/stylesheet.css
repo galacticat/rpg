@@ -1,11 +1,9 @@
 /* Body
 */
-
+#main {
+  position: relative;
+}
 body {
-  /*scrolling beholder*/
-  /*background-image: url("../images/Beholder_3E.jpg");
-  background-repeat: repeat-x|repeat-y;*/
-  /*scrolling beholder*/
   background-color: #FFFFFF;
   margin: 0;
   padding: 0;
@@ -14,6 +12,20 @@ body {
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
+
+body:after {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/Beholder_3E.jpg");
+  width: 100%;
+  heigh: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
 img {
   opacity: 0.5;
   filter:alpha(opacity=50);/*For IE8 and earlier */
