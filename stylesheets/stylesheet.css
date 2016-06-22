@@ -1,8 +1,3 @@
-/* Body
-*/
-#main {
-  position: relative;
-}
 body {
   margin: 0;
   padding: 0;
@@ -13,14 +8,13 @@ body {
 }
 
 body:after {
-  content:"";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   background-image: url("../images/Beholder_3E.jpg");
   width: 100%;
-  heigh: 100%;
+  height: 100%;
   opacity: 0.2;
   z-index: -1;
 }
