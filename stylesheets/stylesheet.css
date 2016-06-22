@@ -25,64 +25,6 @@ body {
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
- 
- .background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../images/Beholder_3E.jpg");
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-}
-
-img {
-  opacity: 0.5;
-  filter:alpha(opacity=50);/*For IE8 and earlier */
-}
-	
-}
-.car-right {
-  position: absolute;
-  top: 86%;
-  left: -200px;
-  z-index: 10;
-  background-color: red;
-    
-  animation-duration: 1s;
-  animation-name: goRight;
-  animation-iteration-count: infinite;
-    
-  -moz-animation-duration: 1s;
-  -moz-animation-name: goRight;
-  -moz-animation-iteration-count: infinite;
-}
-
-@keyframes goRight {
-  from {
-    -webkit-transform: translate(0,0);
-  }
-
-  to {
-    -webkit-transform: translate(1920px,0);
-  }
-}
-
-@-moz-keyframes goRight {
-  from {
-    -moz-transform: translate(0,0);
-  }
-
-  to {
-    -moz-transform: translate(1920px,0);
-  }
-}
-
-/* Header, <header>
-   header   - container
-   h1       - project name
-   h2       - project description
-*/
 
 header {
   background-image: url("../images/DnD.jpg");
@@ -113,7 +55,7 @@ header h2 {
 
 .container {
   background-color: rgba(255,255,255,0.9);
-  margin-top: 0;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
