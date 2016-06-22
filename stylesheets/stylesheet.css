@@ -5,9 +5,13 @@
 div#first{
 	background-image: url("../images/Beholder_3E.jpg");
 	opacity: 0.5;
+	width: 300px;
+	height 300px;
 }
 
 div#second{
+	width: 300px;
+	height: 300px;
 	position: absolute;
 	top: 0;
 	left: 0;
