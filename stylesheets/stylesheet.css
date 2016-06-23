@@ -23,8 +23,7 @@ body {
 }
 
 #header {
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   background-image: url("../images/DnD.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
