@@ -6,43 +6,59 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<title>RPG Redneck IT</title>
-		
-		<header id="header">
-			<h1>RPG Group</h2>
-			<h2>Hosted by Redneck IT</h2>
-			<ul>
-			<li><a href="https://drive.google.com/open?id=0B-L6whvDDru0ODBTaGViTDVRUUk" target="_blank">RPG Books</a></li>
-			<li><a href="http://www.redneckit.net"target="_blank">Redneck IT</a></li>
-			<!--li><a href="contact.asp">Contact</a></li-->
-			<!--li><a href="about.asp">About</a></li-->
-			</ul>
-		</header>
 	</head> 
-<body>
-	<div id="container">	
-		<div id="text">
-			<h2>Welcome to the Redneck IT RPG Page</h2>
-			<dl>
-			<dt>RPG Books:</dt>
-			<dd>The google drive with a large variety of RPG books.</dd>
-			<br></br>
-			<dt>Redneck IT:</dt>
-			<dd>Takes you to the <a target="_blank" href="http://www.redneckit.net">Redneck IT</a> website.</dd>
-			</dl>
-			<h2>Time to next game:</h2>
-			<div id="countdown"></div>
-			<br></br>
-		<div id="block"></div>
-		<div id="iframe">
-		<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n1837ja2m1mejslsglfk978jdk%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-		</div>
-		</div>
-	</div>
-</body>
 
-<script src="../javascripts/jquery-2.1.4.js" type="text/javascript"></script>
+<div class="row">
+	<div class="col-md-4">
+	<header id="header">
+		<h1>RPG Group</h2>
+		<h2>Hosted by Redneck IT</h2>
+	</header>
+	</div>
+	<div class="col-md-8 extraClass">
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+		<li><a data-toggle="tab" href="#rpg_books">RPG Books</a></li>
+		<li><a data-toggle="tab" href="#redneckit">Redneck IT</a></li>
+		<li><a data-toggle="tab" href="#calendar">Calendar</a></li>
+	</ul>
+	</div>
+</div>
+	<div id="container" class="tab-content">
+			
+			<div id="home" class="tab-pane fade in active">
+				<h2>Welcome to the Redneck IT RPG Page</h2>
+				<dl>
+				<dt>RPG Books:</dt>
+				<dd>The google drive with a large variety of RPG books.</dd>
+				<br></br>
+				<dt>Redneck IT:</dt>
+				<dd>Takes you to the <a target="_blank" href="http://www.redneckit.net">Redneck IT</a> website.</dd>
+				</dl>
+				<h2>Time to next game:</h2>
+				<div id="countdown"></div>
+			</div>
+			<div id="rpg_books" class="tab-pane fade">
+			RPG Books
+			<iframe src="https://drive.google.com/embeddedfolderview?id=0B-L6whvDDru0ODBTaGViTDVRUUk#list" style="width:90vw; height:100vh; border:0;"></iframe>
+			</div>
+			<div id="redneckit" class="tab-pane fade">
+			<iframe src="http://www.redneckit.net" style="width:100vw; height:100vh; border:0;"></iframe>
+			</div>
+			<div id="calendar" class="tab-pane fade">
+			<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n1837ja2m1mejslsglfk978jdk%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			
+			</div>
+		
+		<div id="block"></div>		
+		</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" type="text/javascript"></script>
 <script src="../javascripts/countdown.js" type="text/javascript"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script>
 var end = new Date('06/25/2016 02:00 PM');
 
