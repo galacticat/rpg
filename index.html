@@ -17,7 +17,7 @@
 		<h2>Hosted by Redneck IT</h2>
 	</header>
 	</div>
-	<div id="navbar-main" class="row">
+	<div class="row">
 	<ul class="nav nav-tabs">
 		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
 		<li><a data-toggle="tab" href="#rpg_books">RPG Books</a></li>
@@ -83,21 +83,5 @@ var end = new Date('06/25/2016 02:00 PM');
         document.getElementById('countdown').innerHTML += seconds + 'secs';
     }
     timer = setInterval(showRemaining, 1000);
-
-var affixElement = '#navbar-main';
-
-$(affixElement).affix({
-  offset: {
-    // Distance of between element and top page
-    top: function () {
-      return (this.top = $(affixElement).offset().top)
-    },
-    // when start #footer 
-    bottom: function () { 
-      return (this.bottom = $('#footer').outerHeight(true))
-    }
-  }
-});
-
 </script>
 </html>
