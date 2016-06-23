@@ -1,15 +1,15 @@
 body {
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
 	margin: 0px;
+	height: 100vh;
+	width: 100vw;
 }
 
 #container{
-	
-	margin: auto;
+	margin: 0;
 	position:relative;
-	height: 100%;
-	width: 100%;
-	
+	height: 100vh;
+	width: 100vw;
 }
 
 #header {
@@ -18,14 +18,13 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; 
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;  
   padding: 10px;
-  width: 100%;
+  width: 100vw;
 }
 
 header h1 {
-  margin-top: 0px;
-  font-size: 30px;
+  margin: 0px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px black;
@@ -39,9 +38,7 @@ header h2 {
 }
 
 ul {
-	position: absolute;
-	left: 0;
-	right: 0;
+	position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -51,13 +48,11 @@ ul {
 }
 
 li {
-	
     float: left;
 }
 
 li a {
-	
-    display: block;
+    
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -66,7 +61,6 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li:hover {
-	
     background-color: black;
 }
 
@@ -81,14 +75,16 @@ li:hover {
 	background-image: url("../images/Beholder_3E.jpg");
 	background-repeat: repeat;
 	opacity: 0.1;
+	height: 100vh;
+	width: 100vw;
 }
 
 #text {
   position: relative;
-  margin-top: 50px;
   margin-left: 10px;  
   font-size: 20px;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,10 +98,10 @@ dl{
 }
 
 #countdown{
-	font-size: 50px;
+	font-size: 30px;
 	margin-left: 10px;	
 }
 
 #iframe{
-	z-index: -1;
+	
 }
