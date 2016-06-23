@@ -37,9 +37,7 @@ header h2 {
   color: white;
   text-shadow: 2px 2px black;
 }
-body.row{
-  margin: 0;
-}
+
 ul {
 	position: relative;
     list-style-type: none;
