@@ -45,6 +45,31 @@ header h2 {
   color: white;
   text-shadow: 2px 2px black;
 }
+/*navbar stick*/
+#navbar-main {
+  /* Added `.affix-top` class css when the element is top */
+  &.affixed-top {
+    background: black;
+  }
+  /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+  &.affix {
+    background: gray;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  /* Added `.affix-bottom` class css when the element is footer */
+  &.affix-bottom {
+    background: red; 
+  }
+}
+
+/* Not important */
+.footer {
+  background: #eee;
+  height: 1000px;
+}
+/*end of sticky header*/
 
 ul {
 	position: relative;
