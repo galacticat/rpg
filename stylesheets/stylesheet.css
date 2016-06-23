@@ -1,5 +1,5 @@
 body {
-	
+	font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
 	margin: 0px;
 }
 
@@ -28,7 +28,6 @@ header h1 {
   font-size: 30px;
   font-weight: bold;
   color: white;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;
   text-shadow: 2px 2px black;
 }
 
@@ -48,7 +47,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
+
 }
 
 li {
@@ -82,8 +81,6 @@ li:hover {
 	background-image: url("../images/Beholder_3E.jpg");
 	background-repeat: repeat;
 	opacity: 0.1;
-	width: 100%;
-	height: 100%;
 }
 
 #text {
@@ -91,14 +88,11 @@ li:hover {
   margin-top: 50px;
   margin-left: 10px;  
   font-size: 20px;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;
   height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;
-  color: black;
   text-decoration: underline;
   letter-spacing: -0.03em;
 }
