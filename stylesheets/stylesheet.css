@@ -47,7 +47,7 @@ header h2 {
 }
 
 .nav ul {
-	position: relative;
+    position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -56,11 +56,11 @@ header h2 {
 
 }
 
-.nav li {
+.nav-tabs li {
     float: left;
 }
 
-.nav li a {
+.nav-tabs li a {
     
     color: white;
     text-align: center;
@@ -69,7 +69,7 @@ header h2 {
 }
 
 /* Change the link color to #111 (black) on hover */
-.nav li:hover {
+.nav-tabs li:hover {
     background-color: black;
 }
 
