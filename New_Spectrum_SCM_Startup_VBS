@@ -1,6 +1,0 @@
-Set wshShell = WScript.CreateObject( "WScript.Shell" )
-strUserName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )
-wshShell.Run "C:\SpectrumSCM\SpectrumSCM.jnlp"
-
-Set objShell = WScript.CreateObject("WScript.Shell")
-objShell.RegWrite "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Desktop", "C:\Documents and Settings\" &strUserName &"\Desktop", "REG_SZ"

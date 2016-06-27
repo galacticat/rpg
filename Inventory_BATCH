@@ -1,5 +1,0 @@
-@echo off
-for /f &quot;skip=2 tokens=2 delims==&quot; %%i in (&#39;wmic computersystem get model /value&#39;) do (
-echo &quot;%username%&quot;,%%i &gt;&gt; \\&lt;INSERT SERVER HOSTNAME&gt;\Techwriter\_Techwriter-2007\Resources\Software\PC_Inventory.csv
-)
-END
