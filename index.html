@@ -101,17 +101,17 @@ var end = new Date('07/02/2016 02:00 PM');
         var distance = end - now;
         if (distance < 0) {
             clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'NOW!';
+            document.getElementById('countdown').innerHTML = 'Next game is TBD!';
             return;
         }
         var days = Math.floor(distance / _day);
         var hours = Math.floor((distance % _day) / _hour);
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
-        document.getElementById('countdown').innerHTML = days + 'days ';
-        document.getElementById('countdown').innerHTML += hours + 'hrs ';
-        document.getElementById('countdown').innerHTML += minutes + 'mins ';
-        document.getElementById('countdown').innerHTML += seconds + 'secs';
+        document.getElementById('countdown').innerHTML = days + ' days ';
+        document.getElementById('countdown').innerHTML += hours + ' hrs ';
+        document.getElementById('countdown').innerHTML += minutes + ' mins ';
+        document.getElementById('countdown').innerHTML += seconds + ' secs';
     }
     timer = setInterval(showRemaining, 1000);
 </script>
