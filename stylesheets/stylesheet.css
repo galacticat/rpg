@@ -73,6 +73,10 @@ header h2 {
     background-color: black;
 }
 
+#nav .nav-tabs .active a {
+	color: black;
+}
+
 #block{
 	z-index: -1;
 	margin: 0px;
