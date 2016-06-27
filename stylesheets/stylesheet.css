@@ -10,24 +10,6 @@ body {
 	position:realative;
 	margin: 0;
 }
-dl ol{
-	font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
-	height: 100vh;
-	width: 100vw;	
-	margin-top: 0;	
-}
-dl ul{
-	font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
-	height: 100vh;
-	width: 100vw;	
-	margin-top: 0;	
-}
-dl li{
-	font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
-	height: 100vh;
-	width: 100vw;	
-	margin-top: 0;	
-}
 
 .row-top-margin{
 	margin-top:0;
@@ -63,33 +45,8 @@ header h2 {
   color: white;
   text-shadow: 2px 2px black;
 }
-/*navbar stick*/
-#navbar-main {
-  /* Added `.affix-top` class css when the element is top */
-  &.affixed-top {
-    background: black;
-  }
-  /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
-  &.affix {
-    background: gray;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  /* Added `.affix-bottom` class css when the element is footer */
-  &.affix-bottom {
-    background: red; 
-  }
-}
 
-/* Not important */
-.footer {
-  background: #eee;
-  height: 1000px;
-}
-/*end of sticky header*/
-
-ul {
+.nav ul {
 	position: relative;
     list-style-type: none;
     margin: 0;
@@ -99,11 +56,11 @@ ul {
 
 }
 
-li {
+.nav li {
     float: left;
 }
 
-li a {
+.nav li a {
     
     color: white;
     text-align: center;
@@ -112,7 +69,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li:hover {
+.nav li:hover {
     background-color: black;
 }
 
@@ -143,10 +100,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
   text-decoration: underline;
   letter-spacing: -0.03em;
-}
-
-dl{
-	
 }
 
 #countdown{
