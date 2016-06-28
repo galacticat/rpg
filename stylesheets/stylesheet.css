@@ -53,7 +53,7 @@ header h2 {
 #nav .nav-tabs li a {
 	color: white;
 	text-align: center;
-
+	padding: 15px 15px;
 	text-decoration: none;
 	border: none;
 }
@@ -123,6 +123,8 @@ h3{
 #countdown{
 	font-size: 10px;
 	font-weight: normal;
+	padding-right: 10px;
+	margin 0;
 }
 
 #iframe{
