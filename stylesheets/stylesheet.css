@@ -1,30 +1,16 @@
 body {
-	font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
-	height: 100vh;
-	width: 100vw;	
-	margin-top: 0;
+		font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
+		height: 100vh;
+		width: 100vw;
+		margin: 0;
 }
 
-.container{
-	margin: 0;
-	position:relative;
-	height: 100vh;
-	width: 100vw;
-	padding: 0;
-}
-
-.row{
-	position:realative;
-	margin: 0;
-}
-
-#header {
+header#header {
 	padding: 10px;
 	background-image: url("../images/DnD.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: 0% 75%; 
-	margin-top: 0;
 	width: 100vw;
 }
 
@@ -32,7 +18,6 @@ header h1 {
 	font-size: 20px;
 	font-weight: bold;
 	color: white;
-	text-shadow: 2px 2px black;
 }
 
 header h2 { 
@@ -42,20 +27,29 @@ header h2 {
 	text-shadow: 2px 2px black;
 }
 
-#nav ul {
-	position: relative;
-	list-style-type: none;
-	margin: 0;
+div[class^="col"] {
 	padding: 0;
-	overflow: hidden;
+}
+
+.nav.row{
+	height: 50px;
 	background-color: #333;
 }
 
-#nav .nav-tabs li {
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	position: absolute;
+    bottom: 100;
+}
+
+.nav .nav-tabs li {
 	float: left;
 }
 
-#nav .nav-tabs li a {
+.nav .nav-tabs li a {
 	color: white;
 	text-align: center;
 	padding: 15px 15px;
@@ -64,24 +58,52 @@ header h2 {
 }
 
 /* Change the link color to #111 (black) on hover */
-#nav .nav-tabs li:hover:not(.nohover) {
+.nav .nav-tabs li:hover {
 	background-color: black;
+	height: 50px;
 }
 
-#nav .nav-tabs .active a {
+ul.nav.nav-tabs li.active a {
 	color: black;
+	margin: 0;
+	height: 50px;
 }
 
-.nohover{
-	text-align: left;
-	margin-bottom: 0;
-	border: none;
+ul.nav.nav-tabs li.onclick{
+	color: black;
+	margin: 0;
+	height: 50px;
 }
 
-  .tab-pane:not(.active) {
+.tab-pane:not(.active) {
       display: none;
   }
 
+.nav.row #nav-bar {
+		height: 40px;
+		background-color: #333;
+		color: white;
+		text-align: right;
+		padding: 10px 10px;
+		margin: 0;
+		text-decoration: none;
+		overflow: hidden;
+}
+
+#countdown{
+		height: 40px;
+		background-color: #333;
+		color: white;
+		font-size: 100%;
+		text-align: left;
+		
+		margin: 0;
+		text-decoration: none;
+
+		
+
+}
+  
 li {
 	line-height: 1.5;	
 }
@@ -123,13 +145,6 @@ h3{
   font-weight: bolder;
   font-size: 15px;
   letter-spacing: -0.03em;
-}
-
-#countdown{
-	font-size: 10px;
-	font-weight: normal;
-	padding-right: 10px;
-	margin 0;
 }
 
 #iframe{
