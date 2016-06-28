@@ -116,7 +116,8 @@ h3{
 }
 
 #countdown{
-	font-size: 30px;
+	font-size: 10px;
+	font-weight: normal;
 }
 
 #iframe{
