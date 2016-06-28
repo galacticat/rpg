@@ -77,8 +77,7 @@ header h2 {
 	color: black;
 }
 
-li::before{
-	content: ":";
+li span{
 	font-weight: bold;
 }
 
