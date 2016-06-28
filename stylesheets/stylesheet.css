@@ -109,6 +109,10 @@ ul.nav.nav-tabs li.onclick{
 	margin-left: 10px;
 }
 
+#home dl dd{
+	margin-left: 20px;
+}
+
 li {
 	line-height: 1.5;	
 }
