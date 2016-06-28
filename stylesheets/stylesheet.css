@@ -58,12 +58,18 @@ header h2 {
 }
 
 /* Change the link color to #111 (black) on hover */
-#nav .nav-tabs li:hover {
+#nav .nav-tabs li:hover:not(.nohover) {
+    background: #ff0000;
+} {
 	background-color: black;
 }
 
 #nav .nav-tabs .active a {
 	color: black;
+}
+
+.nohover{
+	margin-bottom: 0;
 }
 
 #container{
