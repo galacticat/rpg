@@ -53,8 +53,9 @@ header h2 {
 #nav .nav-tabs li a {
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 15px 15px;
 	text-decoration: none;
+	border: none;
 }
 
 /* Change the link color to #111 (black) on hover */
