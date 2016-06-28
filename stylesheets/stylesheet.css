@@ -1,8 +1,8 @@
 body {
-		font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
-		height: 100vh;
-		width: 100vw;
-		margin: 0;
+	font-family: Monaco, "Bitstream Vera Sans Mono", "Helvetica", Terminal, monospace;	
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
 }
 
 header#header {
@@ -42,7 +42,7 @@ div[class^="col"] {
 	padding: 0;
 	border: none;
 	position: absolute;
-    bottom: 100;
+	bottom: 100;
 }
 
 .nav .nav-tabs li {
@@ -76,34 +76,30 @@ ul.nav.nav-tabs li.onclick{
 }
 
 .tab-pane:not(.active) {
-      display: none;
+	display: none;
   }
 
 .nav.row #nav-bar {
-		height: 40px;
-		background-color: #333;
-		color: white;
-		text-align: right;
-		padding: 10px 10px;
-		margin: 0;
-		text-decoration: none;
-		overflow: hidden;
+	height: 40px;
+	background-color: #333;
+	color: white;
+	text-align: right;
+	padding: 10px 10px;
+	margin: 0;
+	text-decoration: none;
+	overflow: hidden;
 }
 
 #countdown{
-		height: 40px;
-		background-color: #333;
-		color: white;
-		font-size: 100%;
-		text-align: left;
-		
-		margin: 0;
-		text-decoration: none;
-
-		
-
+	height: 40px;
+	background-color: #333;
+	color: white;
+	font-size: 75%;
+	text-align: left;
+	margin: 0;
+	text-decoration: none;
 }
- 
+
 #home{
 	padding-left: 10px;
 }
@@ -136,15 +132,15 @@ li span{
 }
 
 h1, h2, h4, h5, h6 {
-  font-weight: bolder;
-  text-decoration: underline;
-  letter-spacing: -0.03em;
+	font-weight: bolder;
+	text-decoration: underline;
+	letter-spacing: -0.03em;
 }
 
 h3{
-  font-weight: bolder;
-  font-size: 15px;
-  letter-spacing: -0.03em;
+	font-weight: bolder;
+	font-size: 15px;
+	letter-spacing: -0.03em;
 }
 
 #iframe{
