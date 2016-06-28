@@ -78,6 +78,10 @@ header h2 {
 	border: none;
 }
 
+  .tab-pane:not(.active) {
+      display: none;
+  }
+
 li {
 	line-height: 1.5;	
 }
