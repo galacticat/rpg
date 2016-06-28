@@ -4,6 +4,13 @@ body {
 	width: 100vw;	
 	margin-top: 0;
 }
+
+#container{
+	position:relative;
+	height: 100vh;
+	width: 100vw;
+}
+
 .row{
 	position:realative;
 	margin: 0;
@@ -73,12 +80,6 @@ header h2 {
 	border: none;
 }
 
-#container{
-	position:relative;
-	height: 100vh;
-	width: 100vw;
-	padding-left: 10px;	
-}
 li {
 	line-height: 1.5;	
 }
