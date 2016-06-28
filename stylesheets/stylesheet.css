@@ -77,6 +77,11 @@ header h2 {
 	color: black;
 }
 
+li::before{
+	content: ":";
+	font-weight: bold;
+}
+
 #block{
 	z-index: -1;
 	margin: 0px;
