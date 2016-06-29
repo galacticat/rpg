@@ -75,10 +75,6 @@ ul.nav.nav-tabs li.onclick{
 	height: 50px;
 }
 
-.tab-pane:not(.active) {
-	display: none;
-  }
-
 .nav.row #nav-bar {
 	height: 40px;
 	background-color: #333;
