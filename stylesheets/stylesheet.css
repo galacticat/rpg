@@ -156,7 +156,7 @@ h3{
 /* FAQ */
 
 .faq-cat-content {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .faq-cat-tabs li a {
@@ -177,15 +177,6 @@ h3{
 .panel-faq .panel-heading .panel-title span {
     font-size: 13px;
     font-weight: normal;
-}
-
-#largeImgPanel {
-	text-align: center;
-	display: none;
-	position: fixed;
-	z-index: 100;
-	top: 0; left: 0; width: 100%; height: 100%;
-	background-color: rgba(100,100,100, 0.5);
 }
 
 p span{
