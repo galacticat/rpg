@@ -64,12 +64,16 @@ nav.navbar.navbar-inverse{
 	text-align: left;
 	text-decoration: none;
 }
+#content{
+	padding: 0;
+}
 
 /*Home*/
 
 #home{
 	width: 75%;
 	margin:0 auto;
+	padding: 10px;
 }
 
 #home li {
@@ -94,6 +98,26 @@ nav.navbar.navbar-inverse{
 	opacity: 0.1;
 	height: 100vh;
 	width: 100vw;
+}
+
+#rpg_books iframe{
+	width: 100%;
+}
+
+/*redneckit*/
+
+#redneckit{
+	position: fixed;
+	left: 0;
+	display:block;
+}
+
+/*Calendar*/
+
+#calendar iframe{
+	display: block;
+	margin: 0 auto;
+	
 }
 
 /* FAQ */
