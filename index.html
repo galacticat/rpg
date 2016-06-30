@@ -11,215 +11,193 @@
 		
 		<title>RPG Redneck IT</title>
 </head> 
-<div class="container-fluid">
-		<div class="row">
-		<header id="header">
+<div id="header" class="container-fluid hidden-xs"><!--Header Container Start-->
+		<header>
 			<h1>RPG Group</h2>
 			<h2>Hosted by Redneck IT</h2>
 		</header>
-		</div>
-</div>
-<div style="padding:0;" class="container-fluid">	
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!--a class="navbar-brand" href="#">WebSiteName</a-->
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-        <li><a data-toggle="tab" href="#rpg_books">RPG Books</a></li>
-        <li><a data-toggle="tab" href="#redneckit">Redneck IT</a></li>
-        <li><a data-toggle="tab" href="#calendar">Calendar</a></li>		
-        <li><a data-toggle="tab" href="#faq">FAQ</a></li>		
-      </ul>
-      <!--ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul-->
-    </div>
-  </div>
-</nav>
-</div>
-		<!--div style="background-color: #333;" class="nav row">
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<ul class="nav nav-tabs">
+</div><!--Header Container End-->
+
+<div id="nav" class="container-fluid"><!--Navigation Container Start-->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+		
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
 					<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
 					<li><a data-toggle="tab" href="#rpg_books">RPG Books</a></li>
 					<li><a data-toggle="tab" href="#redneckit">Redneck IT</a></li>
-					<li><a data-toggle="tab" href="#calendar">Calendar</a></li>
-					<li><a data-toggle="tab" href="#faq">FAQ</a></li>
+					<li><a data-toggle="tab" href="#calendar">Calendar</a></li>		
+					<li><a data-toggle="tab" href="#faq">FAQ</a></li>		
+				</ul>
+				<!--ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul-->
+				<ul id="gm" class="nav navbar-nav pull-right hidden-xs">
+					<li>
+						<p>GM: Chris</p>
+						<p>Next Game:</p>
+					</li>
+					<li>
+						<div class="navbar-nav" id="countdown"></div>
+					<li>
 				</ul>
 			</div>
-			<div style="text-align:right; font-size:10px;" id="nav-bar" class="nav col-xs-3 col-sm-3 col-md-3 col-lg-3">
-			<p style="text-align:right; font-size:10px;">Chris will DM next game in:</p>
-			</div>
-			<div style="padding: 10px;" class="nav col-xs-3 col-sm-3 col-md-3 col-lg-3" id="countdown"></div>
-		</div-->
-		<div class="container-fluid">
-		<div class="row">
+		</div>
+	</nav>
+</div><!--Navigation Container End-->
+
+<div class="container-fluid"><!--Tab Content Container Start-->
 		<div class="tab-content">
-		
-			
-			<div id="home" class="tab-pane fade in active col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div id="home" class="tab-pane fade in active">
 				<h2>Welcome to the Redneck IT RPG Page</h2>
-				<dl>
-				<dt>How do I participate in games?</dt>
-				<dd>
-					<ol type="1">
-						<li>Create a free account on <a target="_blank" href="https://app.roll20.net/account/create">Roll20.net</a>.</li>
-						<li>Use your Redneck IT domain login to access <a target="_blank" href="http://remoteapps.redneckit.net" data-toggle="tooltip" title="Requires IE 11 or previous in compatibility mode">Redneck IT RemoteApps</a>.</li>
-						<li>Create a character using one of the following character generators:
-							<ul>
-								<li><span>Hero Labs:</span> Used to create characters for DnD 3.5e, DnD 5e, and Pathfinder</li>
-								<li><span>GURPS Character Assistant:</span> Used to create any GURPS Character</li>
-								<li><span>Dresden RPG Character Manager:</span> Used to create any Dresden Files (Fate System) character</li>
-							</ul>
-						</li>
-						<li>Email <a href="mailto:gaming@redneckit.net?Subject=I%20am%20ready%20to%20game!&body=Name%3A%0D%0AEmail%3A%0D%0ACharacter%20Name%3A" target="_top">gaming@redneckit.net</a> and include the following:
-							<ul>
-								<li>Name</li>
-								<li>Email you used to create your <a target="_blank" href="https://app.roll20.net/account/create">Roll20.net</a> account.</li>
-								<li>Character Name</li>
-								<li>Attach an <a target="_blank" href="https://www.google.com/search?q=dnd+character+images&espv=2&biw=944&bih=967&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiB1LKnvMvNAhVD2oMKHSh1CosQ_AUIBigB#tbm=isch&q=d%26d+character+images">image</a> to represent your character in game</li>
-								<li>Attach a copy of the character sheet for the character you will be playing.</li>
-							</ul>
-						</li>
-						<li>Watch some videos!
-							<ul>
-								<li><a target="_blank" href="https://youtu.be/h-R3ya74TE0">How do you play an RPG?</a></li>
-								<li><a target="_blank" href="https://youtu.be/svG0RmIGBPU">How do you use Roll20?</a></li>
-								<li><a target="_blank" href="https://youtu.be/Cg9Wb_fEEzo">How do you use Hero Lab?</a></li>	
-							</ul>
-						</li>
-					</ol>
-				</dd>
-				</dl>
+					<dl>
+						<dt>How do I participate in games?</dt>
+						<dd>
+							<ol type="1">
+								<li>Create a free account on <a target="_blank" href="https://app.roll20.net/account/create">Roll20.net</a>.</li>
+								<li>Use your Redneck IT domain login to access <a target="_blank" href="http://remoteapps.redneckit.net" data-toggle="tooltip" title="Requires IE 11 or previous in compatibility mode">Redneck IT RemoteApps</a>.</li>
+								<li>Create a character using one of the following character generators:
+									<ul>
+										<li><span>Hero Labs:</span> Used to create characters for DnD 3.5e, DnD 5e, and Pathfinder</li>
+										<li><span>GURPS Character Assistant:</span> Used to create any GURPS Character</li>
+										<li><span>Dresden RPG Character Manager:</span> Used to create any Dresden Files (Fate System) character</li>
+									</ul>
+								</li>
+								<li>Email <a href="mailto:gaming@redneckit.net?Subject=I%20am%20ready%20to%20game!&body=Name%3A%0D%0AEmail%3A%0D%0ACharacter%20Name%3A" target="_top">gaming@redneckit.net</a> and include the following:
+									<ul>
+										<li>Name</li>
+										<li>Email you used to create your <a target="_blank" href="https://app.roll20.net/account/create">Roll20.net</a> account.</li>
+										<li>Character Name</li>
+										<li>Attach an <a target="_blank" href="https://www.google.com/search?q=dnd+character+images&espv=2&biw=944&bih=967&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiB1LKnvMvNAhVD2oMKHSh1CosQ_AUIBigB#tbm=isch&q=d%26d+character+images">image</a> to represent your character in game</li>
+										<li>Attach a copy of the character sheet for the character you will be playing.</li>
+									</ul>
+								</li>
+								<li>Watch some videos!
+									<ul>
+										<li><a target="_blank" href="https://youtu.be/h-R3ya74TE0">How do you play an RPG?</a></li>
+										<li><a target="_blank" href="https://youtu.be/svG0RmIGBPU">How do you use Roll20?</a></li>
+										<li><a target="_blank" href="https://youtu.be/Cg9Wb_fEEzo">How do you use Hero Lab?</a></li>	
+									</ul>
+								</li>
+							</ol>
+						</dd>
+					</dl>
 			</div>
 			
 			<div id="rpg_books" class="tab-pane fade">
-			<iframe src="https://drive.google.com/embeddedfolderview?id=0B-L6whvDDru0ODBTaGViTDVRUUk#list" style="width:90vw; height:100vh; border:0;"></iframe>
+				<iframe src="https://drive.google.com/embeddedfolderview?id=0B-L6whvDDru0ODBTaGViTDVRUUk#list" style="width:90vw; height:100vh; border:0;"></iframe>
 			</div>
 			
 			<div id="redneckit" class="tab-pane fade">
-			<iframe src="http://www.redneckit.net" style="width:100vw; height:100vh; border:0;"></iframe>
+				<iframe src="http://www.redneckit.net" style="width:100vw; height:100vh; border:0;"></iframe>
 			</div>
 			
 			<div id="calendar" class="tab-pane fade">
-			<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n1837ja2m1mejslsglfk978jdk%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+				<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n1837ja2m1mejslsglfk978jdk%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0"></iframe>
 			</div>	
+			
 			<div id="faq" class="tab-pane fade">
-			<!-- Tab panes -->
-            <div class="tab-content faq-cat-content">
-                <div class="tab-pane active in fade" id="faq-cat-1">
-<!--FAQGroupStart--><div class="panel-group" id="accordion-cat-1">
-						<!--FAQ Item Start Replace sub-# in this section-->
-                        <div class="panel panel-default panel-faq">
-                            <div class="panel-heading">
-                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-1">
-                                    <h4 class="panel-title">
+				<!-- Tab panes -->
+				<div class="tab-content faq-cat-content">
+					<div class="tab-pane active in fade" id="faq-cat-1">
+						<div class="panel-group" id="accordion-cat-1"><!--FAQGroupStart-->
+							<div class="panel panel-default panel-faq"><!--FAQ Item Start Replace sub-# in this section-->
+								<div class="panel-heading">
+									<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-1">
+										<h4 class="panel-title">
                                         What are the ability scores, and what do they mean?
-                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
-                                    </h4>
-                                </a>
-                            </div>
-                            <div id="faq-cat-1-sub-1" class="panel-collapse collapse">
-                                <div class="panel-body">
-								<p><span>Strength</span> is being able to crush a tomato.</p>
-								<p><span>Dexterity</span> is being able to dodge a tomato.</p>
-								<p><span>Constitution</span> is being able to eat a bad tomato.</p>
-								<p><span>Intelligence</span> is knowing a tomato is a fruit.</p>
-								<p><span>Wisdom</span> is knowing not to put a tomato in a fruit salad.</p>
-								<p><span>Charisma</span> is being able to sell a tomato based fruit salad.</p>
-                                </div>
-                            </div>
-                        </div>
-						<!--FAQ Item End-->
-                        <div class="panel panel-default panel-faq">
-                            <div class="panel-heading">
-                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-2">
-                                    <h4 class="panel-title">
+											<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+										</h4>
+									</a>
+								</div>
+								<div id="faq-cat-1-sub-1" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p><span>Strength</span> is being able to crush a tomato.</p>
+										<p><span>Dexterity</span> is being able to dodge a tomato.</p>
+										<p><span>Constitution</span> is being able to eat a bad tomato.</p>
+										<p><span>Intelligence</span> is knowing a tomato is a fruit.</p>
+										<p><span>Wisdom</span> is knowing not to put a tomato in a fruit salad.</p>
+										<p><span>Charisma</span> is being able to sell a tomato based fruit salad.</p>
+									</div>
+								</div>
+							</div><!--FAQ Item End-->
+						
+							<div class="panel panel-default panel-faq">
+								<div class="panel-heading">
+									<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-2">
+										<h4 class="panel-title">
                                         What is the standard array of ability scores?
-                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
-                                    </h4>
-                                </a>
-                            </div>
-                            <div id="faq-cat-1-sub-2" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                   <p><span>15, 14, 13, 12, 10, 8</span><p>
-                                </div>
-                            </div>
-                        </div>
-						<div class="panel panel-default panel-faq">
-							<div class="panel-heading">
-								<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-3">
-									<h4 class="panel-title">
+											<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+										</h4>
+									</a>
+								</div>
+								<div id="faq-cat-1-sub-2" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p><span>15, 14, 13, 12, 10, 8</span><p>
+									</div>
+								</div>
+							</div>
+						
+							<div class="panel panel-default panel-faq">
+								<div class="panel-heading">
+									<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-3">
+										<h4 class="panel-title">
                                         What is this alignment thing?
-										<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
-                                    </h4>
-                                </a>
-                            </div>
-                            <div id="faq-cat-1-sub-3" class="panel-collapse collapse">
-                                <div class="panel-body">
-									<div style="padding-right:10px" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-									<img src="images/hamburger_alignment.jpg" style="width:100%; height:100%; cursor:pointer" onclick="showImage(this.src, 'images/hamburger_alignment.jpg');" />
-									<p style="text-align:center; font-size:0.75em;"><i>(click image to enlarge)</i></p>
+											<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+										</h4>
+									</a>
+								</div>
+								<div id="faq-cat-1-sub-3" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div style="padding-right:10px" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+											<img src="images/hamburger_alignment.jpg" style="width:100%; height:100%; cursor:pointer" onclick="showImage(this.src, 'images/hamburger_alignment.jpg');" />
+											<p style="text-align:center; font-size:0.75em;"><i>(click image to enlarge)</i></p>
+										</div>
+										<div id="largeImgPanel" onclick="this.style.display='none'">
+											<img id="largeImg" style="height:100%; margin:0; padding:0;" />
+										</div>
+										<div style="font-size:10px; line-heigh:0.5;" class="col-xs-10 col-sm-10 col-md-10 col-lg-11">
+											<p><span>Lawful Good</span></p>
+											<p>A lawful good character typically acts with compassion and always with honor and a sense of duty. Such characters include righteous knights, paladins, and most dwarves. Lawful good creatures include the noble golden dragons.</p>
+											<p><Span>Neutral Good</span></p>
+											<p>A neutral good character typically acts altruistically, without regard for or against lawful precepts such as rules or tradition. A neutral good character has no problems with cooperating with lawful officials, but does not feel beholden to them. In the event that doing the right thing requires the bending or breaking of rules, they do not suffer the same inner conflict that a lawful good character would.</p>
+											<p><Span>Chaotic Good</span></p>
+											<p>A chaotic good character does what is necessary to bring about change for the better, disdains bureaucratic organizations that get in the way of social improvement, and places a high value on personal freedom, not only for oneself, but for others as well. Chaotic good characters usually intend to do the right thing, but their methods are generally disorganized and often out of sync with the rest of society.</p>									
+											<p><Span>Lawful Neutral</span></p>
+											<p>A lawful neutral character typically believes strongly in lawful concepts such as honor, order, rules, and tradition, and often follows a personal code. Examples of lawful neutral characters include a soldier who always follows orders, a judge or enforcer that adheres mercilessly to the word of the law, and a disciplined monk.</p>			
+											<p><Span>Neutral</span></p>
+											<p>A neutral character (a.k.a. true neutral) is neutral on both axes and tends not to feel strongly towards any alignment, or actively seeks their balance. Druids frequently follow this dedication to balance, and under Advanced Dungeons & Dragons rules, were required to be this alignment. In an example given in the 2nd Edition Player's Handbook, a typical druid might fight against a band of marauding gnolls, only to switch sides to save the gnolls' clan from being totally exterminated.</p>	
+											<p>Most animals, lacking the capacity for moral judgment, are of this alignment, since they are guided by instinct rather than conscious decision (although in 5th edition animals are "unaligned," not sapient enough to actively make a decision based on alignment, even that of neutrality).</p>
+											<p><Span>Chaotic Neutral</span></p>
+											<p>A chaotic neutral character is an individualist who follows their own heart and generally shirks rules and traditions. Although chaotic neutral characters promote the ideals of freedom, it is their own freedom that comes first; good and evil come second to their need to be free</p>
+											<p><Span>Lawful Evil</span></p>
+											<p>A lawful evil character sees a well-ordered system as being easier to exploit and shows a combination of desirable and undesirable traits. Examples of this alignment include tyrants, devils, and undiscriminating mercenary types who have a strict code of conduct.</p>									
+											<p><Span>Neutral Evil</span></p>
+											<p>A neutral evil character is typically selfish and has no qualms about turning on its allies-of-the-moment, and usually makes allies primarily to further their own goals. A neutral evil character has no compunctions about harming others to get what they want, but neither will they go out of their way to cause carnage or mayhem when they see no direct benefit for themselves. Another valid interpretation of neutral evil holds up evil as an ideal, doing evil for evil's sake and trying to spread its influence. Examples of the first type are an assassin who has little regard for formal laws but does not needlessly kill, a henchman who plots behind their superior's back, or a mercenary who switches sides if made a better offer. An example of the second type would be a masked killer who strikes only for the sake of causing fear and distrust in the community.</p>
+											<p><Span>Chaotic Evil</span></p>
+											<p>A chaotic evil character tends to have no respect for rules, other people's lives, or anything but their own desires, which are typically selfish and cruel. They set a high value on personal freedom, but do not have much regard for the lives or freedom of other people. Chaotic evil characters do not work well in groups because they resent being given orders and do not usually behave themselves unless there is no alternative.</p>									
+										</div>
 									</div>
-									<div id="largeImgPanel" onclick="this.style.display='none'">
-									<img id="largeImg" style="height:100%; margin:0; padding:0;" />
-									</div>
-									<div style="font-size:10px; line-heigh:0.5;" class="col-xs-10 col-sm-10 col-md-10 col-lg-11">
-									<p><span>Lawful Good</span></p>
-									<p>A lawful good character typically acts with compassion and always with honor and a sense of duty. Such characters include righteous knights, paladins, and most dwarves. Lawful good creatures include the noble golden dragons.</p>
-									<p><Span>Neutral Good</span></p>
-									<p>A neutral good character typically acts altruistically, without regard for or against lawful precepts such as rules or tradition. A neutral good character has no problems with cooperating with lawful officials, but does not feel beholden to them. In the event that doing the right thing requires the bending or breaking of rules, they do not suffer the same inner conflict that a lawful good character would.</p>
-									<p><Span>Chaotic Good</span></p>
-									<p>A chaotic good character does what is necessary to bring about change for the better, disdains bureaucratic organizations that get in the way of social improvement, and places a high value on personal freedom, not only for oneself, but for others as well. Chaotic good characters usually intend to do the right thing, but their methods are generally disorganized and often out of sync with the rest of society.</p>									
-									<p><Span>Lawful Neutral</span></p>
-									<p>A lawful neutral character typically believes strongly in lawful concepts such as honor, order, rules, and tradition, and often follows a personal code. Examples of lawful neutral characters include a soldier who always follows orders, a judge or enforcer that adheres mercilessly to the word of the law, and a disciplined monk.</p>			
-									<p><Span>Neutral</span></p>
-									<p>A neutral character (a.k.a. true neutral) is neutral on both axes and tends not to feel strongly towards any alignment, or actively seeks their balance. Druids frequently follow this dedication to balance, and under Advanced Dungeons & Dragons rules, were required to be this alignment. In an example given in the 2nd Edition Player's Handbook, a typical druid might fight against a band of marauding gnolls, only to switch sides to save the gnolls' clan from being totally exterminated.</p>	
-									<p>Most animals, lacking the capacity for moral judgment, are of this alignment, since they are guided by instinct rather than conscious decision (although in 5th edition animals are "unaligned," not sapient enough to actively make a decision based on alignment, even that of neutrality).</p>
-									<p><Span>Chaotic Neutral</span></p>
-									<p>A chaotic neutral character is an individualist who follows their own heart and generally shirks rules and traditions. Although chaotic neutral characters promote the ideals of freedom, it is their own freedom that comes first; good and evil come second to their need to be free</p>
-									<p><Span>Lawful Evil</span></p>
-									<p>A lawful evil character sees a well-ordered system as being easier to exploit and shows a combination of desirable and undesirable traits. Examples of this alignment include tyrants, devils, and undiscriminating mercenary types who have a strict code of conduct.</p>									
-									<p><Span>Neutral Evil</span></p>
-									<p>A neutral evil character is typically selfish and has no qualms about turning on its allies-of-the-moment, and usually makes allies primarily to further their own goals. A neutral evil character has no compunctions about harming others to get what they want, but neither will they go out of their way to cause carnage or mayhem when they see no direct benefit for themselves. Another valid interpretation of neutral evil holds up evil as an ideal, doing evil for evil's sake and trying to spread its influence. Examples of the first type are an assassin who has little regard for formal laws but does not needlessly kill, a henchman who plots behind their superior's back, or a mercenary who switches sides if made a better offer. An example of the second type would be a masked killer who strikes only for the sake of causing fear and distrust in the community.</p>
-									<p><Span>Chaotic Evil</span></p>
-									<p>A chaotic evil character tends to have no respect for rules, other people's lives, or anything but their own desires, which are typically selfish and cruel. They set a high value on personal freedom, but do not have much regard for the lives or freedom of other people. Chaotic evil characters do not work well in groups because they resent being given orders and do not usually behave themselves unless there is no alternative.</p>									
-									</div>
-                                </div>
-                            </div>
-                        </div>
-						<!--div class="panel panel-default panel-faq">
-                            <div class="panel-heading">
-                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-4">
-                                    <h4 class="panel-title">
-                                        FAQ Item Category #4
-                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
-                                    </h4>
-                                </a>
-                            </div>
-                            <div id="faq-cat-1-sub-4" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Answer #4
-                                </div>
-                            </div>
-                        </div-->
-<!--FAQ Group End--></div>
+								</div>
+							</div>
+						</div><!--FAQ Group End-->
 					</div>
-					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	</div>
-	<div id="block"></div>
+</div><!--Tab Content Container End-->
+
+<div id="background"></div>
 
 <!--script src="../javascripts/jquery-3.0.0.min.js" type="text/javascript"></script-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" type="text/javascript"></script>
