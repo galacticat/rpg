@@ -1,48 +1,23 @@
+html{
+	height: 125%;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, black); /* Standard syntax (must be last) */
+}
+
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	height: 100vh;
-	width: 100vw;
-	margin: 0;
-}
-
-*{
-	border-radius: 0 !important;
-}
-
-/*Headings*/
-
-#header {
-	background-image: url("../images/DnD.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 0% 75%; 
-	margin: 0;
-}
-
-#header h1, #header h2{
-	font-size: 20px;
-	font-weight: bold;
-	color: white;
-	text-decoration: none;
-}
-
-#header h2 { 
-	font-size: 18px;
-}
-
-h2, h3, h4, h5, h6 {
-	color: black;
-	letter-spacing: -0.03em;
-}
-
-h3{
-	font-size: 16px;
+	margin: 0 auto;
+	width: 800px;
+	background: transparent;
 }
 
 /*NAV BAR*/
 
 #nav {
-	padding: 0;
+	width: 100%;
 	margin: 0;
 }
 
@@ -50,33 +25,57 @@ nav.navbar.navbar-inverse{
 	margin-bottom: 0px;
 }
 
+.ng{
+	text-align: left;
+	padding-top: 5px;
+	padding-right: 0;
+	lett-spacing: -0.5em;
+}
+
 #gm{
-	color: white;
 	line-height: 1.5;
 	padding-right: 5px;
-	padding-top: 5px;
 	font-size: 1.0em;
+	text-align: left;
+	color: black;
 }
 
 #gm p{
 	margin: 0;
-	padding-right: 5px;
 }
 
 #countdown{
-	padding-top: 22px;
+	margin-left: 0;
+	padding-top: 5px;
 	text-align: left;
 	text-decoration: none;
+	padding-left: 0;
 }
+
+/*Headings*/
+
+h2, h3, h4, h5, h6 {
+	color: black;
+	letter-spacing: -0.03em;
+}
+
+h3{
+	font-size: 1.0em;
+}
+
+/*Content*/
+
 #content{
-	padding: 0;
+
 }
 
 /*Home*/
 
 #home{
-	width: 75%;
 	margin:0 auto;
+	width:700px;
+	border:0;
+	background-color: white;
 	padding: 10px;
 }
 
@@ -87,47 +86,43 @@ nav.navbar.navbar-inverse{
 #home li span{
 	font-weight: bold;
 }
-/*Background*/
 
-#background{
-	z-index: -1;
-	margin: 0px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left:0;
-	right:0;
-	background-image: url("../images/Beholder_3E.jpg");
-	background-repeat: repeat;
-	opacity: 0.1;
-	height: 100vh;
-	width: 100vw;
+#home p i{
+	font-size:0.8em;
 }
 
 #rpg_books iframe{
-	width: 100%;
+	display: block;
+	margin:0 auto;
+	height: 100vh;
+	width:700px;
+	border:0;
+	background-color: white;
 }
 
 /*redneckit*/
 
-#redneckit{
-	position: fixed;
-	left: 0;
-	display:block;
+#redneckit iframe{
+	display: block;
 }
 
 /*Calendar*/
 
 #calendar iframe{
-	display: block;
+	display: block;	
 	margin: 0 auto;
-	
+	height: 700px;
+	width: 700px;
+	border:0;
 }
 
 /* FAQ */
 
 .faq-cat-content {
     margin-top: 10px;
+	width: 75%;
+	margin:0 auto;
+	padding: 10px;
 }
 
 .faq-cat-tabs li a {
@@ -146,8 +141,12 @@ nav.navbar.navbar-inverse{
 }
 
 .panel-faq .panel-heading .panel-title span {
-    font-size: 13px;
+    font-size: 1em;
     font-weight: normal;
+}
+
+#faq-cat-1-sub-6 div div p{
+	font-size: 1.2em;
 }
 
 p span{
