@@ -19,10 +19,21 @@ body {
 #nav {
 	width: 100%;
 	margin: 0;
+	padding: 0;
 }
 
 nav.navbar.navbar-inverse{
 	margin-bottom: 0px;
+	padding: 0px;
+	min-height: 15px;
+}
+
+div.container-fluid{
+	padding: 0px;
+}
+
+div.container-fluid ::before{
+	display: none;
 }
 
 .ng{

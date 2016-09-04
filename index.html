@@ -78,7 +78,7 @@
 									</ul>
 								</li>
 								<li>Fill out this <a target="_blank" href="https://docs.google.com/forms/d/1j8MS0VQu08jHedqAVObh0natT-y4xmnFeISqverrbnU/viewform">form</a> to help your GM personalize your next game!</li>
-								<li>Check out our FAQ section!</li>
+								<li>Check out our <a data-toggle="tab" href="#faq">FAQ</a> section!</li>
 							</ol>
 						</dd>
 					</dl>
@@ -297,5 +297,16 @@ var end = new Date('09/25/2016 2:00 PM');
         window.getSelection().removeAllRanges();
         }
 		
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    var target = this.href.split('#');
+    $('.nav a').filter('a[href="#'+target[1]+'"]').tab('show');
+})
+
+$(function () {
+    $('#tab1 a').click(function (e) {
+        e.preventDefault();
+        $('a[href="' + $(this).attr('href') + '"]').tab('show');
+    })
+});	
 </script>
 </html>
