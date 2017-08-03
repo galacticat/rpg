@@ -1,112 +1,122 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-		<meta charset='utf-8'>
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-		<!--ink rel="stylesheet" href="stylesheets/bootstrap.min.css"-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!--ink rel="stylesheet" href="stylesheets/bootstrap.min.css"-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-		
-		<title>RPG Redneck IT</title>
-</head> 
+	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+
+	<title>RPG Redneck IT</title>
+</head>
+
 <body>
-<div id="header" class="container-fluid hidden-xs"><!--Header Container Start-->
+	<div id="header" class="container-fluid hidden-xs">
+		<!--Header Container Start-->
 		<header>
-			<img class="col-xs-6 col-sm-6 col-md-6 col-lg-6" src="images/Header.png" height="100%" width="100%"/>
-			<p class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ng">Next Game in<div id="countdown" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div></p>
-			<p class="col-xs-6 col-sm-6 col-md-6 col-lg-6">GM: <t class="gm_name"></t></p>
+			<img class="col-xs-6 col-sm-6 col-md-6 col-lg-6" src="images/Header.png" height="100%" width="100%" />
+			<p class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ng">Next Game in
+				<div id="countdown" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+			</p>
+			<p class="col-xs-6 col-sm-6 col-md-6 col-lg-6">GM:
+				<t class="gm_name"></t>
+			</p>
 		</header>
-</div><!--Header Container End-->
+	</div>
+	<!--Header Container End-->
 
-<div id="nav" class="container-fluid"><!--Navigation Container Start-->
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
+	<div id="nav" class="container-fluid">
+		<!--Navigation Container Start-->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-			</div>
-		
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-					<li><a data-toggle="tab" href="#rpg_books">RPG Books</a></li>
-					<li><a data-toggle="tab" href="#redneckit">Redneck IT</a></li>
-					<li><a data-toggle="tab" href="#calendar">Calendar</a></li>		
-					<li><a data-toggle="tab" href="#rpg_blog">Blog</a></li>
-					<li><a data-toggle="tab" href="#faq">FAQ</a></li>
-				</ul>
-				<!--ul class="nav navbar-nav navbar-right">
+				</div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+						<li><a data-toggle="tab" href="#rpg_books">RPG Books</a></li>
+						<li><a data-toggle="tab" href="#calendar">Calendar</a></li>
+						<li><a data-toggle="tab" href="#rpg_blog">Blog</a></li>
+						<li><a data-toggle="tab" href="#faq">FAQ</a></li>
+					</ul>
+					<!--ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 				</ul-->
-			</div>
-			
-		</div>
-	</nav>
-</div><!--Navigation Container End-->
+				</div>
 
-<div id="content" class="container-fluid"><!--Tab Content Container Start-->
+			</div>
+		</nav>
+	</div>
+	<!--Navigation Container End-->
+
+	<div id="content" class="container-fluid">
+		<!--Tab Content Container Start-->
 		<div class="tab-content">
 			<div id="home" class="tab-pane fade in active">
 				<h2>Welcome to the Redneck IT RPG Page</h2>
-					<dl>
-						<dt>How do I participate in games?</dt>
-						<dd>
-							<ol type="1">
-								<li>Create a free account on <a target="_blank" href="https://app.roll20.net/account/create">Roll20.net</a>.</li>
-								<li>Create a character using one of the following character generators:
-									<p><i>(If you have a Redneck IT domain login, you can use it to access these programs through the <a target="_blank" href="http://remoteapps.redneckit.net" data-toggle="tooltip" title="Requires IE 11 or previous in compatibility mode">Redneck IT RemoteApps</a>. Save Character source files to the RPG (R:) drive under the Characters directory.)</i></p>									
-									<ul>
-										<li><span><a target="_blank" href="http://www.getherolab.com">Hero Labs</a>:</span> Used to create characters for DnD 3.5e, DnD 5e, and Pathfinder</li>
-										<li><span><a target="_blank" href="https://github.com/Heliomance/HeroForge-Anew/releases">Hero Forge</a>:</span> Used to create characters for DnD 3.5e</li>
-										<li><span><a target="_blank" href="http://www.sjgames.com/gurps/characterassistant/">GURPS Character Assistant</a>:</span> Used to create any GURPS Character</li>
-										<li><span><a target="_blank" href="http://www.jimbutcheronline.com/bb/index.php/topic,31657.0.html">Dresden RPG Character Manager</a>:</span> Used to create any Dresden Files (Fate System) character</li>
-									</ul>
-								</li>
-								<li>Email <a href="mailto:gaming@redneckit.net?Subject=I%20am%20ready%20to%20game!&body=Name%3A%0D%0AEmail%3A%0D%0ACharacter%20Name%3A" target="_top">gaming@redneckit.net</a> and include the following:
-									<ul>
-										<li>Name</li>
-										<li>Email you used to create your <a target="_blank" href="https://app.roll20.net/account/create">Roll20.net</a> account.</li>
-										<li>Character Name</li>
-										<li>Attach an <a target="_blank" href="https://www.google.com/search?q=dnd+character+images&espv=2&biw=944&bih=967&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiB1LKnvMvNAhVD2oMKHSh1CosQ_AUIBigB#tbm=isch&q=d%26d+character+images">image</a> to represent your character in game</li>
-										<li>Attach a copy of the character sheet for the character you will be playing.</li>
-									</ul>
-								</li>
-								<li>Fill out this <a target="_blank" href="https://docs.google.com/forms/d/1j8MS0VQu08jHedqAVObh0natT-y4xmnFeISqverrbnU/viewform">form</a> to help your GM personalize your next game!</li>
-								<li>Check out our <a data-toggle="tab" href="#faq">FAQ</a> section!</li>
-							</ol>
-						</dd>
-					</dl>
+				<dl>
+					<dt>How do I participate in games?</dt>
+					<dd>
+						<ol type="1">
+							<li>Create a free account on <a target="_blank" href="https://app.roll20.net/account/create">Roll20.net</a>.</li>
+							<li>Create a character using one of the following character generators:
+								<p><i>(If you have a Redneck IT domain login, you can use it to access these programs through the <a target="_blank" href="http://remoteapps.redneckit.net" data-toggle="tooltip" title="Requires IE 11 or previous in compatibility mode">Redneck IT RemoteApps</a>. Save Character source files to the RPG (R:) drive under the Characters directory.)</i></p>
+								<ul>
+									<li><span><a target="_blank" href="http://www.getherolab.com">Hero Labs</a>:</span> Used to create characters for DnD 3.5e, DnD 5e, and Pathfinder</li>
+									<li><span><a target="_blank" href="https://github.com/Heliomance/HeroForge-Anew/releases">Hero Forge</a>:</span> Used to create characters for DnD 3.5e</li>
+									<li><span><a target="_blank" href="http://www.sjgames.com/gurps/characterassistant/">GURPS Character Assistant</a>:</span> Used to create any GURPS Character</li>
+									<li><span><a target="_blank" href="http://www.jimbutcheronline.com/bb/index.php/topic,31657.0.html">Dresden RPG Character Manager</a>:</span> Used to create any Dresden Files (Fate System) character</li>
+								</ul>
+							</li>
+							<li>Email <a href="mailto:gaming@redneckit.net?Subject=I%20am%20ready%20to%20game!&body=Name%3A%0D%0AEmail%3A%0D%0ACharacter%20Name%3A" target="_top">gaming@redneckit.net</a> and include the following:
+								<ul>
+									<li>Name</li>
+									<li>Email you used to create your <a target="_blank" href="https://app.roll20.net/account/create">Roll20.net</a> account.</li>
+									<li>Character Name</li>
+									<li>Attach an <a target="_blank" href="https://www.google.com/search?q=dnd+character+images&espv=2&biw=944&bih=967&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiB1LKnvMvNAhVD2oMKHSh1CosQ_AUIBigB#tbm=isch&q=d%26d+character+images">image</a> to represent your
+										character in game</li>
+									<li>Attach a copy of the character sheet for the character you will be playing.</li>
+								</ul>
+							</li>
+							<li>Fill out this <a target="_blank" href="https://docs.google.com/forms/d/1j8MS0VQu08jHedqAVObh0natT-y4xmnFeISqverrbnU/viewform">form</a> to help your GM personalize your next game!</li>
+							<li>Check out our <a data-toggle="tab" href="#faq">FAQ</a> section!</li>
+						</ol>
+					</dd>
+				</dl>
 			</div>
-			
+
 			<div id="rpg_books" class="tab-pane fade">
 				<iframe src="https://drive.google.com/embeddedfolderview?id=0B-L6whvDDru0ODBTaGViTDVRUUk#list" align="middle" scrolling="yes"></iframe>
 			</div>
-			
-			<div id="redneckit" class="tab-pane fade">
-				<iframe src="http://www.redneckit.net" style="height:100vh; width:100%; border:0;" align="middle"></iframe>
-			</div>
-			
+
 			<div id="calendar" class="tab-pane fade">
-				<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n1837ja2m1mejslsglfk978jdk%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FChicago" align="middle" scrolling="no"></iframe>
-			</div>	
-			
+				<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n1837ja2m1mejslsglfk978jdk%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FChicago"
+					align="middle" scrolling="no"></iframe>
+			</div>
+
 			<div id="rpg_blog" class="tab-pane fade">
 				<iframe src="http://blog.redneckit.net/?view=magazine" style="height:100vh; width:100%; border:0;" align="middle" scrolling="yes"></iframe>
 			</div>
-			
+
 			<div id="faq" class="tab-pane fade">
 				<!-- Tab panes -->
 				<div class="tab-content faq-cat-content">
 					<div class="tab-pane active in fade" id="faq-cat-1">
-						<div class="panel-group" id="accordion-cat-1"><!--FAQGroupStart-->						
-						
-							<div class="panel panel-default panel-faq"><!--FAQ Item Start Replace sub-# in this section-->
+						<div class="panel-group" id="accordion-cat-1">
+							<!--FAQGroupStart-->
+
+							<div class="panel panel-default panel-faq">
+								<!--FAQ Item Start Replace sub-# in this section-->
 								<div class="panel-heading">
 									<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-1">
 										<h4 class="panel-title">
@@ -120,9 +130,11 @@
 										<iframe width="500" height="315" src="https://www.youtube.com/embed/h-R3ya74TE0" frameborder="0" allowfullscreen></iframe>
 									</div>
 								</div>
-							</div><!--FAQ Item End-->
+							</div>
+							<!--FAQ Item End-->
 
-							<div class="panel panel-default panel-faq"><!--FAQ Item Start Replace sub-# in this section-->
+							<div class="panel panel-default panel-faq">
+								<!--FAQ Item Start Replace sub-# in this section-->
 								<div class="panel-heading">
 									<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-2">
 										<h4 class="panel-title">
@@ -136,9 +148,11 @@
 										<iframe width="500" height="315" src="https://www.youtube.com/embed/Cg9Wb_fEEzo" frameborder="0" allowfullscreen></iframe>
 									</div>
 								</div>
-							</div><!--FAQ Item End-->							
+							</div>
+							<!--FAQ Item End-->
 
-							<div class="panel panel-default panel-faq"><!--FAQ Item Start Replace sub-# in this section-->
+							<div class="panel panel-default panel-faq">
+								<!--FAQ Item Start Replace sub-# in this section-->
 								<div class="panel-heading">
 									<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-3">
 										<h4 class="panel-title">
@@ -152,9 +166,11 @@
 										<iframe width="500" height="315" src="https://www.youtube.com/embed/svG0RmIGBPU" frameborder="0" allowfullscreen></iframe>
 									</div>
 								</div>
-							</div><!--FAQ Item End-->
-							
-							<div class="panel panel-default panel-faq"><!--FAQ Item Start Replace sub-# in this section-->
+							</div>
+							<!--FAQ Item End-->
+
+							<div class="panel panel-default panel-faq">
+								<!--FAQ Item Start Replace sub-# in this section-->
 								<div class="panel-heading">
 									<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-4">
 										<h4 class="panel-title">
@@ -173,9 +189,11 @@
 										<p><span>Charisma</span> is being able to sell a tomato based fruit salad.</p>
 									</div>
 								</div>
-							</div><!--FAQ Item End-->
-						
-							<div class="panel panel-default panel-faq"><!--FAQ Item Start Replace sub-# in this section-->
+							</div>
+							<!--FAQ Item End-->
+
+							<div class="panel panel-default panel-faq">
+								<!--FAQ Item Start Replace sub-# in this section-->
 								<div class="panel-heading">
 									<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-5">
 										<h4 class="panel-title">
@@ -186,12 +204,15 @@
 								</div>
 								<div id="faq-cat-1-sub-5" class="panel-collapse collapse">
 									<div class="panel-body">
-										<p><span>15, 14, 13, 12, 10, 8</span><p>
+										<p><span>15, 14, 13, 12, 10, 8</span>
+											<p>
 									</div>
 								</div>
-							</div><!--FAQ Item End-->
-						
-							<div class="panel panel-default panel-faq"><!--FAQ Item Start Replace sub-# in this section-->
+							</div>
+							<!--FAQ Item End-->
+
+							<div class="panel panel-default panel-faq">
+								<!--FAQ Item Start Replace sub-# in this section-->
 								<div class="panel-heading">
 									<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-6">
 										<h4 class="panel-title">
@@ -212,35 +233,65 @@
 										<div style="font-size:10px; line-heigh:0.5;" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 											<p><span>Lawful Good</span></p>
 											<p>A lawful good character typically acts with compassion and always with honor and a sense of duty. Such characters include righteous knights, paladins, and most dwarves. Lawful good creatures include the noble golden dragons.</p>
-											<p><Span>Neutral Good</span></p>
-											<p>A neutral good character typically acts altruistically, without regard for or against lawful precepts such as rules or tradition. A neutral good character has no problems with cooperating with lawful officials, but does not feel beholden to them. In the event that doing the right thing requires the bending or breaking of rules, they do not suffer the same inner conflict that a lawful good character would.</p>
-											<p><Span>Chaotic Good</span></p>
-											<p>A chaotic good character does what is necessary to bring about change for the better, disdains bureaucratic organizations that get in the way of social improvement, and places a high value on personal freedom, not only for oneself, but for others as well. Chaotic good characters usually intend to do the right thing, but their methods are generally disorganized and often out of sync with the rest of society.</p>									
-											<p><Span>Lawful Neutral</span></p>
-											<p>A lawful neutral character typically believes strongly in lawful concepts such as honor, order, rules, and tradition, and often follows a personal code. Examples of lawful neutral characters include a soldier who always follows orders, a judge or enforcer that adheres mercilessly to the word of the law, and a disciplined monk.</p>			
-											<p><Span>Neutral</span></p>
-											<p>A neutral character (a.k.a. true neutral) is neutral on both axes and tends not to feel strongly towards any alignment, or actively seeks their balance. Druids frequently follow this dedication to balance, and under Advanced Dungeons & Dragons rules, were required to be this alignment. In an example given in the 2nd Edition Player's Handbook, a typical druid might fight against a band of marauding gnolls, only to switch sides to save the gnolls' clan from being totally exterminated.</p>	
-											<p>Most animals, lacking the capacity for moral judgment, are of this alignment, since they are guided by instinct rather than conscious decision (although in 5th edition animals are "unaligned," not sapient enough to actively make a decision based on alignment, even that of neutrality).</p>
-											<p><Span>Chaotic Neutral</span></p>
-											<p>A chaotic neutral character is an individualist who follows their own heart and generally shirks rules and traditions. Although chaotic neutral characters promote the ideals of freedom, it is their own freedom that comes first; good and evil come second to their need to be free</p>
-											<p><Span>Lawful Evil</span></p>
-											<p>A lawful evil character sees a well-ordered system as being easier to exploit and shows a combination of desirable and undesirable traits. Examples of this alignment include tyrants, devils, and undiscriminating mercenary types who have a strict code of conduct.</p>									
-											<p><Span>Neutral Evil</span></p>
-											<p>A neutral evil character is typically selfish and has no qualms about turning on its allies-of-the-moment, and usually makes allies primarily to further their own goals. A neutral evil character has no compunctions about harming others to get what they want, but neither will they go out of their way to cause carnage or mayhem when they see no direct benefit for themselves. Another valid interpretation of neutral evil holds up evil as an ideal, doing evil for evil's sake and trying to spread its influence. Examples of the first type are an assassin who has little regard for formal laws but does not needlessly kill, a henchman who plots behind their superior's back, or a mercenary who switches sides if made a better offer. An example of the second type would be a masked killer who strikes only for the sake of causing fear and distrust in the community.</p>
-											<p><Span>Chaotic Evil</span></p>
-											<p>A chaotic evil character tends to have no respect for rules, other people's lives, or anything but their own desires, which are typically selfish and cruel. They set a high value on personal freedom, but do not have much regard for the lives or freedom of other people. Chaotic evil characters do not work well in groups because they resent being given orders and do not usually behave themselves unless there is no alternative.</p>									
+											<p>
+												<Span>Neutral Good</span>
+											</p>
+											<p>A neutral good character typically acts altruistically, without regard for or against lawful precepts such as rules or tradition. A neutral good character has no problems with cooperating with lawful officials, but does not feel beholden to
+												them. In the event that doing the right thing requires the bending or breaking of rules, they do not suffer the same inner conflict that a lawful good character would.</p>
+											<p>
+												<Span>Chaotic Good</span>
+											</p>
+											<p>A chaotic good character does what is necessary to bring about change for the better, disdains bureaucratic organizations that get in the way of social improvement, and places a high value on personal freedom, not only for oneself, but for
+												others as well. Chaotic good characters usually intend to do the right thing, but their methods are generally disorganized and often out of sync with the rest of society.</p>
+											<p>
+												<Span>Lawful Neutral</span>
+											</p>
+											<p>A lawful neutral character typically believes strongly in lawful concepts such as honor, order, rules, and tradition, and often follows a personal code. Examples of lawful neutral characters include a soldier who always follows orders, a judge
+												or enforcer that adheres mercilessly to the word of the law, and a disciplined monk.</p>
+											<p>
+												<Span>Neutral</span>
+											</p>
+											<p>A neutral character (a.k.a. true neutral) is neutral on both axes and tends not to feel strongly towards any alignment, or actively seeks their balance. Druids frequently follow this dedication to balance, and under Advanced Dungeons & Dragons
+												rules, were required to be this alignment. In an example given in the 2nd Edition Player's Handbook, a typical druid might fight against a band of marauding gnolls, only to switch sides to save the gnolls' clan from being totally exterminated.</p>
+											<p>Most animals, lacking the capacity for moral judgment, are of this alignment, since they are guided by instinct rather than conscious decision (although in 5th edition animals are "unaligned," not sapient enough to actively make a decision
+												based on alignment, even that of neutrality).</p>
+											<p>
+												<Span>Chaotic Neutral</span>
+											</p>
+											<p>A chaotic neutral character is an individualist who follows their own heart and generally shirks rules and traditions. Although chaotic neutral characters promote the ideals of freedom, it is their own freedom that comes first; good and evil
+												come second to their need to be free</p>
+											<p>
+												<Span>Lawful Evil</span>
+											</p>
+											<p>A lawful evil character sees a well-ordered system as being easier to exploit and shows a combination of desirable and undesirable traits. Examples of this alignment include tyrants, devils, and undiscriminating mercenary types who have a strict
+												code of conduct.</p>
+											<p>
+												<Span>Neutral Evil</span>
+											</p>
+											<p>A neutral evil character is typically selfish and has no qualms about turning on its allies-of-the-moment, and usually makes allies primarily to further their own goals. A neutral evil character has no compunctions about harming others to get
+												what they want, but neither will they go out of their way to cause carnage or mayhem when they see no direct benefit for themselves. Another valid interpretation of neutral evil holds up evil as an ideal, doing evil for evil's sake and trying
+												to spread its influence. Examples of the first type are an assassin who has little regard for formal laws but does not needlessly kill, a henchman who plots behind their superior's back, or a mercenary who switches sides if made a better offer.
+												An example of the second type would be a masked killer who strikes only for the sake of causing fear and distrust in the community.</p>
+											<p>
+												<Span>Chaotic Evil</span>
+											</p>
+											<p>A chaotic evil character tends to have no respect for rules, other people's lives, or anything but their own desires, which are typically selfish and cruel. They set a high value on personal freedom, but do not have much regard for the lives
+												or freedom of other people. Chaotic evil characters do not work well in groups because they resent being given orders and do not usually behave themselves unless there is no alternative.</p>
 										</div>
 									</div>
 								</div>
-							</div><!--FAQ Item End-->
-							
-						</div><!--FAQ Group End-->
+							</div>
+							<!--FAQ Item End-->
+
+						</div>
+						<!--FAQ Group End-->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div><!--Tab Content Container End-->
+	</div>
+	<!--Tab Content Container End-->
 </body>
 
 <!--script src="../javascripts/jquery-3.0.0.min.js" type="text/javascript"></script-->
@@ -252,61 +303,65 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
-<!--countdown code-->	
-$('.gm_name').html('Chris');
-var end = new Date('09/25/2016 2:00 PM');
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var timer;
-    function showRemaining() {
-        var now = new Date();
-        var distance = end - now;
-        if (distance < 0) {
-            clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'Next game is TBD!';
-            return;
-        }
-        var days = Math.floor(distance / _day);
-        var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
-        document.getElementById('countdown').innerHTML = days + ' days ';
-        document.getElementById('countdown').innerHTML += hours + ' hrs ';
-        document.getElementById('countdown').innerHTML += minutes + ' mins ';
-        document.getElementById('countdown').innerHTML += seconds + ' secs';
-    }
-    timer = setInterval(showRemaining, 1000);
+	<!--countdown code-->	
+	$('.gm_name').html('Chris');
+	var end = new Date('09/25/2016 2:00 PM');
+	var _second = 1000;
+	var _minute = _second * 60;
+	var _hour = _minute * 60;
+	var _day = _hour * 24;
+	var timer;
+
+	function showRemaining() {
+		var now = new Date();
+		var distance = end - now;
+		if (distance < 0) {
+			clearInterval(timer);
+			document.getElementById('countdown').innerHTML = 'Next game is TBD!';
+			return;
+		}
+		var days = Math.floor(distance / _day);
+		var hours = Math.floor((distance % _day) / _hour);
+		var minutes = Math.floor((distance % _hour) / _minute);
+		var seconds = Math.floor((distance % _minute) / _second);
+		document.getElementById('countdown').innerHTML = days + ' days ';
+		document.getElementById('countdown').innerHTML += hours + ' hrs ';
+		document.getElementById('countdown').innerHTML += minutes + ' mins ';
+		document.getElementById('countdown').innerHTML += seconds + ' secs';
+	}
+	timer = setInterval(showRemaining, 1000);
 	<!--thumbnail code-->	
 	function showImage(smSrc, lgSrc) {
-        document.getElementById('largeImg').src = smSrc;
-        showLargeImagePanel();
-        unselectAll();
-        setTimeout(function() {
-        document.getElementById('largeImg').src = lgSrc;
-        }, 1)
-            }
-    function showLargeImagePanel() {
-        document.getElementById('largeImgPanel').style.display = 'block';
-        }
-    function unselectAll() {
-        if(document.selection)
-        document.selection.empty();
-        if(window.getSelection)
-        window.getSelection().removeAllRanges();
-        }
-		
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    var target = this.href.split('#');
-    $('.nav a').filter('a[href="#'+target[1]+'"]').tab('show');
-})
+		document.getElementById('largeImg').src = smSrc;
+		showLargeImagePanel();
+		unselectAll();
+		setTimeout(function() {
+			document.getElementById('largeImg').src = lgSrc;
+		}, 1)
+	}
 
-$(function () {
-    $('#tab1 a').click(function (e) {
-        e.preventDefault();
-        $('a[href="' + $(this).attr('href') + '"]').tab('show');
-    })
-});	
+	function showLargeImagePanel() {
+		document.getElementById('largeImgPanel').style.display = 'block';
+	}
+
+	function unselectAll() {
+		if (document.selection)
+			document.selection.empty();
+		if (window.getSelection)
+			window.getSelection().removeAllRanges();
+	}
+
+	$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+		var target = this.href.split('#');
+		$('.nav a').filter('a[href="#' + target[1] + '"]').tab('show');
+	})
+
+	$(function() {
+		$('#tab1 a').click(function(e) {
+			e.preventDefault();
+			$('a[href="' + $(this).attr('href') + '"]').tab('show');
+		})
+	});
 </script>
+
 </html>
